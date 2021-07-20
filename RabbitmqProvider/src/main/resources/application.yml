@@ -1,0 +1,13 @@
+spring:
+  # 项目名称
+  application:
+    name: rabbitmq-provider
+  # RabbitMQ服务配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    # 消息确认（ACK）
+    publisher-confirm-type: correlated #确认消息已发送到交换机(Exchange)
+    publisher-returns: true #确认消息已发送到队列(Queue)
